@@ -8,7 +8,7 @@
 }
 
 .title {
-  padding: $screenSidePadding;
+  padding: 3rem;
   padding-top: 10rem !important;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .step {
-  padding: 1rem $screenSidePadding 5rem $screenSidePadding;
+  padding: 1rem 3rem 5rem 3rem;
   display: flex;
   justify-content: space-between;
 

@@ -4,12 +4,12 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "KoPub Batang";
 
   div,
   button,
   p {
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "KoPub Batang";
     font-weight: 300;
     word-wrap: break-word;
     word-break: keep-all;
@@ -17,7 +17,6 @@ body {
 }
 
 $TopBarHeight: 64px;
-$screenSidePadding: 3rem;
 
 @mixin font-main-title {
   font-size: 5rem;
