@@ -1,0 +1,38 @@
+<div class="slider-container">
+  <div class="header">
+    <p>화양 서원</p>
+    <p>유적지 탐방</p>
+  </div>
+
+  <div class="slider-board">
+    <div
+      class="slider-img"
+      [style.background-image]="'url(' + images[currentIndex] + ')'"
+    ></div>
+  </div>
+  <div class="slider-bottom">
+    <div
+      *ngFor="let image of images; let i = index"
+      class="slider-thumb"
+      [ngClass]="{ active: i == currentIndex }"
+      (click)="currentIndex = i"
+    ></div>
+  </div>
+</div>
+<div class="body">
+  <p class="description-title">화양서원과 만동묘</p>
+  <div class="description-list">
+    <p>펜션에서 걸어서 10분거리에 있는 명승지입니다.</p>
+    <p>우암 송시열 선생이 벼슬에서 물러난 후</p>
+    <p>화양동에 들어와 아름다운 아홉절경의 이름을 붙인</p>
+    <p>화양구곡의 역사가 담긴 장소입니다.</p>
+  </div>
+  <p class="description-title">​암서재 탐방</p>
+  <div class="description-list">
+    <p>펜션 5분 거리의 화양계곡 최고 절경, 암서재입니다.</p>
+    <p>송시열이 우뚝 솟은 커다란 바위를 주춧돌로 삼아</p>
+    <p>한 칸짜리 방으로 된 암서재를 지어</p>
+    <p>책을 읽고 시를 읊은 곳입니다.</p>
+    <p [style.margin-top]="'1rem'">시조 한편이 절로 떠오르는 장소입니다.</p>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "pluginns": ["@typescript-eslint"],
+  "extends": ["plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@typescript-eslint/strict-boolean-expressions": [
+      2,
+      {
+        "allowString": false,
+        "allowNumber": false
+      }
+    ],
+    "max-lines-length": [true, 140]
+  }
+}

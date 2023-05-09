@@ -1,0 +1,38 @@
+<div class="slider-container">
+  <div class="header">
+    <p>즐겨유</p>
+    <p>펜션 시설</p>
+  </div>
+
+  <div class="slider-board">
+    <div
+      class="slider-img"
+      [style.background-image]="'url(' + images[currentIndex] + ')'"
+    ></div>
+  </div>
+  <div class="slider-bottom">
+    <div
+      *ngFor="let image of images; let i = index"
+      class="slider-thumb"
+      [ngClass]="{ active: i == currentIndex }"
+      (click)="currentIndex = i"
+    ></div>
+  </div>
+</div>
+<div class="body">
+  <p class="description-title">식당 운영</p>
+  <div class="description-list">
+    <p>백숙, 버섯찌개, 파전류 등을 판매합니다.</p>
+  </div>
+
+  <p class="description-title">매점 운영</p>
+  <div class="description-list">
+    <p>커피, 음료, 술, 아이스크림 등을 판매합니다.</p>
+  </div>
+
+  <p class="description-title">족구장 대여</p>
+  <div class="description-list">
+    <p>족구장 및 족구공을 무료로 대여해드립니다.</p>
+    <p>※ 주차장 상황에 따라 족구장 이용이 어려울 수 있습니다</p>
+  </div>
+</div>

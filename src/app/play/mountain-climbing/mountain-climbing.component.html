@@ -1,0 +1,37 @@
+<div class="slider-container">
+  <div class="header">
+    <p>도명산 등산</p>
+  </div>
+
+  <div class="slider-board">
+    <div
+      class="slider-img"
+      [style.background-image]="'url(' + images[currentIndex] + ')'"
+    ></div>
+  </div>
+  <div class="slider-bottom">
+    <div
+      *ngFor="let image of images; let i = index"
+      class="slider-thumb"
+      [ngClass]="{ active: i == currentIndex }"
+      (click)="currentIndex = i"
+    ></div>
+  </div>
+</div>
+<div class="body">
+  <p class="description-title">첨성대(5곡) 오르기</p>
+  <div class="description-list">
+    <p>펜션에서 정상까지 15분 거리인 가벼운 등산로입니다.</p>
+    <p>도명산 완주가 부담스러우신 분들께 추천합니다.</p>
+    <p>천문을 관측하기 좋은 첨성대의 뜻처럼,</p>
+    <p>첨성대는 주변이 탁 트여있어 화양구곡의 전경을 구경하기 좋습니다.</p>
+  </div>
+  <p class="description-title">도명산 등산코스</p>
+  <div class="description-list">
+    <p>1시간 30분~2시간 정도 소요됩니다.</p>
+    <p>첨성대(5곡)로 입산하여 학소대(8곡)로 하산하면서</p>
+    <p>기암, 맑은물, 울창한 숲의 조화를 감상해보세요.</p>
+    <p>왜 화양계곡이 절경으로 불리는지</p>
+    <p>절로 고개가 끄덕여질것입니다.</p>
+  </div>
+</div>
