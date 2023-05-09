@@ -6,6 +6,7 @@ mat-toolbar {
   justify-content: space-between;
   padding: 0 3rem;
   z-index: 1000;
+  height: 3rem;
 }
 
 div.logo {
@@ -31,11 +32,7 @@ mat-icon {
 
 @media only screen and (max-width: 640px) {
   mat-toolbar {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
     padding: 0 1rem;
-    z-index: 1000;
   }
   div.menu {
     display: none;
