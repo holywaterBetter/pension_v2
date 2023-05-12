@@ -40,9 +40,10 @@ import { MountainClimbingComponent } from './play/mountain-climbing/mountain-cli
 import { HistoricSiteComponent } from './play/historic-site/historic-site.component';
 import { LineComponent } from './line/line.component';
 import { HomeYoutubeComponent } from './home/home-youtube/home-youtube.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     TopBarComponent,
@@ -64,7 +65,8 @@ import { HomeYoutubeComponent } from './home/home-youtube/home-youtube.component
     MountainClimbingComponent,
     HistoricSiteComponent,
     LineComponent,
-  ],
+      FooterComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
