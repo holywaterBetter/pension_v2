@@ -4,24 +4,21 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: "KoPub Batang";
 
   div,
   button,
   p {
-    font-family: "KoPub Batang";
-    font-weight: 300;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
     word-wrap: break-word;
     word-break: keep-all;
   }
 }
 
-$TopBarHeight: 64px;
-
 @mixin font-main-title {
   font-size: 5rem;
   line-height: 5rem;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 @mixin font-title {
