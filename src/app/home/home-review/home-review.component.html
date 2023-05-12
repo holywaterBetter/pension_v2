@@ -1,41 +1,16 @@
-<div class="review">
-  <div class="title">
-    <p>고객님의 리뷰, 감사합니다</p>
-  </div>
-  <div class="move-container">
-    <div
-      class="move left"
-      [class.disabled]="disabledLeftButton"
-      (click)="move(1)"
-    ></div>
-    <div
-      class="move right"
-      [class.disabled]="disabledRightButton"
-      (click)="move(-1)"
-    ></div>
-    <div class="content">
-      <div class="reviews" #reviews>
-        <div
-          class="review-box"
-          [style.min-width]="reviewBoxWidth"
-          *ngFor="let review of ReviewList; let index = index"
-          (mouseenter)="review.hover = true"
-          (mouseleave)="review.hover = false"
-        >
-          <a *ngIf="review.hover" href="{{ review.href }}" target="_blank">
-            자세히 살펴보기
-          </a>
-          <div
-            class="img"
-            [ngStyle]="{ 'background-image': 'url(' + review.img + ')' }"
-          ></div>
-          <div class="description-box">
-            <p class="description">" {{ review.description }} "</p>
-            <p>{{ review.tag }}</p>
-            <p>{{ review.date }}</p>
-          </div>
-        </div>
-      </div>
+<div class="home-review">
+  <div class="review-box">
+    <p class="description">" {{ activeReview.description }} "</p>
+    <p class="visited-date">{{ activeReview.date }}</p>
+    <img src="{{ activeReview.img }}" />
+
+    <div class="dots">
+      <div
+        class="dot active"
+        [class.active]="review.selected"
+        *ngFor="let review of ReviewList; let i = index"
+        (click)="changeImage(review, i)"
+      ></div>
     </div>
   </div>
 </div>
