@@ -38,6 +38,7 @@ import { ValleyComponent } from './play/valley/valley.component';
 import { WalkComponent } from './play/walk/walk.component';
 import { MountainClimbingComponent } from './play/mountain-climbing/mountain-climbing.component';
 import { HistoricSiteComponent } from './play/historic-site/historic-site.component';
+import { LineComponent } from './line/line.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { HistoricSiteComponent } from './play/historic-site/historic-site.compon
     WalkComponent,
     MountainClimbingComponent,
     HistoricSiteComponent,
+    LineComponent,
   ],
   imports: [
     BrowserModule,
