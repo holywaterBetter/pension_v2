@@ -39,6 +39,7 @@ import { WalkComponent } from './play/walk/walk.component';
 import { MountainClimbingComponent } from './play/mountain-climbing/mountain-climbing.component';
 import { HistoricSiteComponent } from './play/historic-site/historic-site.component';
 import { LineComponent } from './line/line.component';
+import { HomeYoutubeComponent } from './home/home-youtube/home-youtube.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { LineComponent } from './line/line.component';
     HomeVideoComponent,
     HomeReviewComponent,
     HomeRecommendComponent,
+    HomeYoutubeComponent,
     BottomBarComponent,
     AboutComponent,
     FoodComponent,
