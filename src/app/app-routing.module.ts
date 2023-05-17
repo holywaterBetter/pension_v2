@@ -6,6 +6,7 @@ import { FoodReservationComponent } from './food-reservation/food-reservation.co
 import { FoodComponent } from './food/food.component';
 import { HomeComponent } from './home/home.component';
 import { PlayComponent } from './play/play.component';
+import { StoryComponent } from './story/story.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'food-reservation', component: FoodReservationComponent },
   { path: 'flat-bench', component: FlatBenchComponent },
   { path: 'play', component: PlayComponent },
+  { path: 'story', component: StoryComponent },
 ];
 
 @NgModule({

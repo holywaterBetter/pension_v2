@@ -2,7 +2,7 @@
 
 :host {
   --height: 3rem;
-  --padding: 3rem;
+  --padding: 5rem;
 }
 
 .header {
@@ -20,6 +20,7 @@
 }
 
 .logo {
+  margin-left: 0;
   font-size: 1rem;
   font-weight: 900;
 }
@@ -32,7 +33,7 @@ ul.list {
 }
 
 a {
-  margin: 1rem;
+  margin-left: 2rem;
   font-size: 0.8rem;
   font-weight: 700;
   text-decoration: none;
@@ -75,7 +76,13 @@ div.more {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1000px) {
+  :host {
+    --padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   :host {
     --height: 3rem;
     --padding: 1rem;

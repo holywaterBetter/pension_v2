@@ -42,6 +42,7 @@ import { DividerComponent } from './divider/divider.component';
 import { HomeYoutubeComponent } from './home/home-youtube/home-youtube.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { StoryComponent } from './story/story.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { HeaderComponent } from './header/header.component';
     DividerComponent,
     FooterComponent,
     HeaderComponent,
+    StoryComponent,
   ],
   imports: [
     BrowserModule,
