@@ -41,9 +41,10 @@ import { HistoricSiteComponent } from './play/historic-site/historic-site.compon
 import { DividerComponent } from './divider/divider.component';
 import { HomeYoutubeComponent } from './home/home-youtube/home-youtube.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     HomeComponent,
     TopBarComponent,
@@ -66,6 +67,8 @@ import { FooterComponent } from './footer/footer.component';
     HistoricSiteComponent,
     DividerComponent,
     FooterComponent,
+    HeaderComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
