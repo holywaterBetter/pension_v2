@@ -23,10 +23,6 @@ div.home-review {
       }
     }
 
-    img {
-      width: 30%;
-    }
-
     div.dots {
       position: absolute;
       bottom: 1rem;
@@ -46,5 +42,15 @@ div.home-review {
         }
       }
     }
+  }
+}
+
+img {
+  width: 40%;
+}
+
+@media only screen and (max-width: 640px) {
+  img {
+    width: 60%;
   }
 }
