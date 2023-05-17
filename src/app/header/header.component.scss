@@ -5,7 +5,7 @@
   --padding: 3rem;
 }
 
-div.header {
+.header {
   width: calc(100% - var(--padding) - var(--padding));
   height: var(--height);
   padding: 0 var(--padding);
@@ -49,6 +49,31 @@ a:hover::after {
 mat-icon {
   display: none;
 }
+mat-icon:hover {
+  opacity: 0.7;
+}
+
+div.more {
+  @extend .header;
+  display: none;
+  z-index: 9;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+  justify-content: center;
+  border: 1px solid rgba(1, 1, 1, 0.1);
+  &.active {
+    transform: translateY(3rem);
+  }
+
+  ul.list {
+    padding: 0;
+    justify-content: center;
+
+    a {
+      margin: 0 2rem;
+    }
+  }
+}
 
 @media only screen and (max-width: 640px) {
   :host {
@@ -56,8 +81,16 @@ mat-icon {
     --padding: 1rem;
   }
 
-  ul.list {
+  .header ul.list {
     display: none;
+  }
+
+  div.more {
+    display: flex;
+  }
+
+  .more ul.list {
+    display: flex !important;
   }
 
   mat-icon {
