@@ -38,7 +38,7 @@ import { ValleyComponent } from './play/valley/valley.component';
 import { WalkComponent } from './play/walk/walk.component';
 import { MountainClimbingComponent } from './play/mountain-climbing/mountain-climbing.component';
 import { HistoricSiteComponent } from './play/historic-site/historic-site.component';
-import { LineComponent } from './line/line.component';
+import { DividerComponent } from './divider/divider.component';
 import { HomeYoutubeComponent } from './home/home-youtube/home-youtube.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -64,9 +64,8 @@ import { FooterComponent } from './footer/footer.component';
     WalkComponent,
     MountainClimbingComponent,
     HistoricSiteComponent,
-    LineComponent,
-      FooterComponent
-   ],
+    DividerComponent,
+    FooterComponent,
   imports: [
     BrowserModule,
     AppRoutingModule,
