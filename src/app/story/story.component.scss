@@ -6,37 +6,45 @@
   padding-top: var(--padding);
   width: calc(100% - var(--padding) - var(--padding));
   margin: 0 var(--padding);
+  margin-bottom: var(--padding);
+}
+.title {
+  margin-top: 10rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
 
-  .title {
-    margin-top: 10rem;
-    font-size: 1.5rem;
-    font-weight: 800;
+.content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: end;
+  margin-bottom: 2rem;
+
+  .description {
+    margin-right: 2rem;
+    font-size: 0.8rem;
+
+    .main-text {
+      margin-top: 3rem;
+      font-size: 1.2rem;
+    }
+
+    .from {
+      text-align: end;
+    }
   }
 
-  .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+  img {
+    height: inherit;
+    width: 50%;
+    // flex: 1;
+  }
+}
 
-    .description {
-      margin-right: 2rem;
-      margin-bottom: 2rem;
-      font-size: 0.8rem;
-
-      .main-text {
-        margin-top: 3rem;
-        font-size: 1.2rem;
-      }
-
-      .from {
-        text-align: end;
-      }
-    }
-
-    img {
-      height: inherit;
-      width: 50%;
-    }
+.background {
+  img {
+    width: 100%;
   }
 }
 
@@ -48,11 +56,16 @@
 
 @media only screen and (max-width: 700px) {
   .title {
-    margin-top: 5rem !important;
+    margin-top: 5rem;
+  }
+  .img-right {
+    flex-direction: column-reverse;
+  }
+  .img-left {
+    flex-direction: column;
   }
   .content {
-    flex-direction: column-reverse;
-    align-items: inherit !important;
+    align-items: inherit;
 
     img {
       width: 100% !important;
