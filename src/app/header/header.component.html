@@ -2,15 +2,16 @@
   <a class="logo" routerLink="/home">능운대</a>
   <ul class="list">
     <li><a routerLink="/story">이야기</a></li>
-    <li><a routerLink="/about">서비스</a></li>
+    <li><a routerLink="/service">서비스</a></li>
     <li><a routerLink="/home">예약</a></li>
   </ul>
   <mat-icon (click)="showMore = !showMore">menu</mat-icon>
 </div>
 <div class="more" [class.active]="showMore" (click)="showMore = !showMore">
   <ul class="list">
-    <li><a routerLink="/about">이야기</a></li>
-    <li><a routerLink="/home">서비스</a></li>
+    <li><a routerLink="/story">이야기</a></li>
+    <li><a routerLink="/service">서비스</a></li>
     <li><a routerLink="/home">예약</a></li>
   </ul>
 </div>
+<div class="dummy"></div>

@@ -5,6 +5,10 @@
   --padding: 5rem;
 }
 
+.dummy {
+  height: var(--height);
+}
+
 .header {
   width: calc(100% - var(--padding) - var(--padding));
   height: var(--height);
@@ -84,7 +88,6 @@ div.more {
 
 @media only screen and (max-width: 450px) {
   :host {
-    --height: 3rem;
     --padding: 1rem;
   }
 
