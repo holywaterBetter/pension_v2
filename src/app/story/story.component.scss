@@ -9,7 +9,6 @@
   margin-bottom: var(--padding);
 }
 .title {
-  margin-top: 10rem;
   font-size: 1.5rem;
   font-weight: 800;
 }
@@ -48,6 +47,12 @@
   }
 }
 
+.img-left {
+  .title {
+    text-align: end;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   :host {
     --padding: 3rem;
@@ -59,10 +64,17 @@
     margin-top: 5rem;
   }
   .img-right {
-    flex-direction: column-reverse;
+    .content {
+      flex-direction: column-reverse;
+    }
   }
   .img-left {
-    flex-direction: column;
+    .title {
+      text-align: initial;
+    }
+    .content {
+      flex-direction: column;
+    }
   }
   .content {
     align-items: inherit;
@@ -76,5 +88,21 @@
 @media only screen and (max-width: 450px) {
   :host {
     --padding: 1rem;
+  }
+}
+
+p {
+  animation: slide-up 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
