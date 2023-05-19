@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'flat-bench',
   templateUrl: './flat-bench.component.html',
-  styleUrls: ['../app.component.scss'],
+  styleUrls: ['./flat-bench.component.scss', '../pension-service.scss'],
 })
 export class FlatBenchComponent {
   currentIndex: number = 0;
