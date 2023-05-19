@@ -18,18 +18,16 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomeVideoComponent } from './home/home-video/home-video.component';
 import { HomeReviewComponent } from './home/home-review/home-review.component';
 import { HomeRecommendComponent } from './home/home-recommend/home-recommend.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
-import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { AboutComponent } from './about/about.component';
-import { FoodComponent } from './service/food/food.component';
+import { FoodComponent } from './pension-service/food/food.component';
 import { FoodReservationComponent } from './food-reservation/food-reservation.component';
 import { GoogleSheetService } from './google-sheet.service';
 import { HttpClientModule } from '@angular/common/http';
-import { FlatBenchComponent } from './service/flat-bench/flat-bench.component';
+import { FlatBenchComponent } from './pension-service/flat-bench/flat-bench.component';
 import { FacilitiesComponent } from './about/facilities/facilities.component';
 import { BBQComponent } from './about/BBQ/BBQ.component';
 import { MapComponent } from './about/map/map.component';
@@ -48,12 +46,10 @@ import { StoryComponent } from './story/story.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    TopBarComponent,
     HomeVideoComponent,
     HomeReviewComponent,
     HomeRecommendComponent,
     HomeYoutubeComponent,
-    BottomBarComponent,
     AboutComponent,
     FoodComponent,
     FoodReservationComponent,
