@@ -25,11 +25,11 @@ import { HomeRecommendComponent } from './home/home-recommend/home-recommend.com
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { AboutComponent } from './about/about.component';
-import { FoodComponent } from './food/food.component';
+import { FoodComponent } from './service/food/food.component';
 import { FoodReservationComponent } from './food-reservation/food-reservation.component';
 import { GoogleSheetService } from './google-sheet.service';
 import { HttpClientModule } from '@angular/common/http';
-import { FlatBenchComponent } from './flat-bench/flat-bench.component';
+import { FlatBenchComponent } from './service/flat-bench/flat-bench.component';
 import { FacilitiesComponent } from './about/facilities/facilities.component';
 import { BBQComponent } from './about/BBQ/BBQ.component';
 import { MapComponent } from './about/map/map.component';

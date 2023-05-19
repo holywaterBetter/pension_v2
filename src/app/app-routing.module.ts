@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-import { FlatBenchComponent } from './flat-bench/flat-bench.component';
+import { FlatBenchComponent } from './service/flat-bench/flat-bench.component';
 import { FoodReservationComponent } from './food-reservation/food-reservation.component';
-import { FoodComponent } from './food/food.component';
+import { FoodComponent } from './service/food/food.component';
 import { HomeComponent } from './home/home.component';
 import { PlayComponent } from './play/play.component';
 import { StoryComponent } from './story/story.component';
