@@ -41,6 +41,7 @@ import { HomeYoutubeComponent } from './home/home-youtube/home-youtube.component
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { StoryComponent } from './story/story.component';
+import { RoomComponent } from './pension-service/room/room.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { StoryComponent } from './story/story.component';
     FooterComponent,
     HeaderComponent,
     StoryComponent,
+    RoomComponent,
   ],
   imports: [
     BrowserModule,
