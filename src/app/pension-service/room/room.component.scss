@@ -26,7 +26,7 @@
       font-size: 1.2rem;
     }
 
-    p.link {
+    .link {
       font-size: 1rem;
       cursor: pointer;
       span.smaller {
@@ -38,6 +38,11 @@
   img {
     width: 50%;
   }
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 div.img-container {
