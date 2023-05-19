@@ -1,39 +1,23 @@
 @import "/src/styles.scss";
 
-.body {
-  p.menu-title {
-    margin: 4rem 0 2rem 0;
-    @include font-title;
-  }
+p.menu-title {
+  margin: 4rem 0 2rem 0;
+  @include font-title;
+}
 
-  .menu-contents {
+.menu-contents {
+  display: flex;
+  font-size: smaller;
+
+  .menu-list {
+    margin: 0 1rem;
+    width: 10rem;
     display: flex;
-    p {
-      @include font-description;
-      line-height: 2rem;
-    }
+    flex-direction: column;
+    align-items: end;
 
-    .menu-list {
-      width: 140px;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-    }
-
-    .menu-prices {
-      width: 140px;
-      margin: 0 0.5rem 0 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-
-      span {
-        font-size: 13px;
-
-        &.show-white {
-          color: white;
-        }
-      }
+    span {
+      font-size: x-small;
     }
   }
 }
