@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class FlatBenchComponent {
   currentIndex: number = 0;
   images: string[] = [
-    '/assets/flat-bench1.jpg',
-    '/assets/flat-bench2.jpg',
-    '/assets/flat-bench3.jpg',
-    '/assets/flat-bench4.jpg',
+    '/assets/flat-bench/flat-bench1.jpg',
+    '/assets/flat-bench/flat-bench2.jpg',
+    '/assets/flat-bench/flat-bench3.jpg',
+    '/assets/flat-bench/flat-bench4.jpg',
   ];
 }
