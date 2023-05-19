@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   showMore: boolean;
+  showMoreService: boolean;
+
+  openMenu() {
+    this.showMore = true;
+  }
+
+  closeMenu() {
+    this.showMore = this.showMoreService = false;
+  }
 }

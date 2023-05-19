@@ -2,6 +2,7 @@
 
 :host {
   --height: 3rem;
+  --reverse-height: -3rem;
   --padding: 5rem;
 }
 
@@ -60,23 +61,30 @@ mat-icon:hover {
 
 div.more {
   @extend .header;
-  display: none;
-  z-index: 9;
+  z-index: 10;
   transition: transform 0.3s ease-in-out;
-  transform: translateY(0);
+  transform: translateY(var(--reverse-height));
   justify-content: center;
   border: 1px solid rgba(1, 1, 1, 0.1);
   &.active {
-    transform: translateY(3rem);
+    transform: translateY(0);
   }
 
   ul.list {
     padding: 0;
-    justify-content: center;
+    justify-content: space-around;
 
     a {
       margin: 0 2rem;
     }
+  }
+}
+
+div.more-service {
+  @extend .more;
+  z-index: 9;
+  &.active {
+    transform: translateY(var(--height));
   }
 }
 
@@ -93,10 +101,6 @@ div.more {
 
   .header ul.list {
     display: none;
-  }
-
-  div.more {
-    display: flex;
   }
 
   .more ul.list {
