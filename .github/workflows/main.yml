@@ -14,15 +14,23 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v2.1.2
         with:
-          node-version: '14'
+          node-version: "12.x"
+        
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build Angular Application
-        run: ng build --prod --base-href /pension_v2/
+        run: ng build --base-href /pension_v2/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
