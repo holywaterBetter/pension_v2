@@ -37,6 +37,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          github_token: ${{ secrets.ACTION }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/whayang-pension
