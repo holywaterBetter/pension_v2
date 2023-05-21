@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build Angular Application
-        run: ng build --prod --base-href /pension_v2/
+        run: ng build --base-href /pension_v2/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
