@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v2.1.2
         with:
           node-version: "12.x"
-        
+
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
@@ -28,6 +28,9 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
 
       - name: Build Angular Application
         run: ng build --base-href /pension_v2/
