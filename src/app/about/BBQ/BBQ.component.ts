@@ -10,8 +10,8 @@ export class BBQComponent {
 
   currentIndex: number = 0;
   images: string[] = [
-    '/assets/dining-place.jpg',
-    '/assets/fire.jpg',
-    '/assets/fire2.jpg',
+    'assets/dining-place.jpg',
+    'assets/fire.jpg',
+    'assets/fire2.jpg',
   ];
 }

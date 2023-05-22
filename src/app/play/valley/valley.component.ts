@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 export class ValleyComponent {
   currentIndex: number = 0;
   images: string[] = [
-    '/assets/valley1.jpg',
-    '/assets/valley2.jpg',
-    '/assets/valley3.jpg',
-    '/assets/valley4.jpg',
-    '/assets/valley5.jpg',
-    '/assets/valley6.jpg',
-    '/assets/valley7.jpg',
+    'assets/valley1.jpg',
+    'assets/valley2.jpg',
+    'assets/valley3.jpg',
+    'assets/valley4.jpg',
+    'assets/valley5.jpg',
+    'assets/valley6.jpg',
+    'assets/valley7.jpg',
   ];
 }

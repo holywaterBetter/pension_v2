@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class FacilitiesComponent {
   currentIndex: number = 0;
   images: string[] = [
-    '/assets/pension.jpg',
-    '/assets/wood-bench.jpg',
-    '/assets/football.jpg',
+    'assets/pension.jpg',
+    'assets/wood-bench.jpg',
+    'assets/football.jpg',
   ];
 }

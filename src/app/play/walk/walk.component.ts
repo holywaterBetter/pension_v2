@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class WalkComponent {
   currentIndex: number = 0;
   images: string[] = [
-    '/assets/walk1.jpg',
-    '/assets/walk2.jpg',
-    '/assets/walk3.jpg',
-    '/assets/walk4.jpg',
+    'assets/walk1.jpg',
+    'assets/walk2.jpg',
+    'assets/walk3.jpg',
+    'assets/walk4.jpg',
   ];
 }

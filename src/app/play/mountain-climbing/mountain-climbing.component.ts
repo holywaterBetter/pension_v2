@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class MountainClimbingComponent {
   currentIndex: number = 0;
   images: string[] = [
-    '/assets/mountain-climbing1.jpg',
-    '/assets/mountain-climbing2.jpg',
-    '/assets/mountain-climbing3.jpg',
-    '/assets/mountain-climbing4.jpg',
-    '/assets/mountain-climbing5.jpg',
+    'assets/mountain-climbing1.jpg',
+    'assets/mountain-climbing2.jpg',
+    'assets/mountain-climbing3.jpg',
+    'assets/mountain-climbing4.jpg',
+    'assets/mountain-climbing5.jpg',
   ];
 }

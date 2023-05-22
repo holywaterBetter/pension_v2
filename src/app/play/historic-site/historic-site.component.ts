@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class HistoricSiteComponent {
   currentIndex: number = 0;
   images: string[] = [
-    '/assets/historic-site1.jpg',
-    '/assets/historic-site2.jpg',
-    '/assets/historic-site3.jpg',
-    '/assets/historic-site4.jpg',
+    'assets/historic-site1.jpg',
+    'assets/historic-site2.jpg',
+    'assets/historic-site3.jpg',
+    'assets/historic-site4.jpg',
   ];
 }
