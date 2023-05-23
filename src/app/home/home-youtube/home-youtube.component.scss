@@ -9,3 +9,9 @@
     justify-content: center;
   }
 }
+
+@media only screen and (max-width: 640px) {
+  .bonus youtube-player {
+    width: 80%;
+  }
+}
