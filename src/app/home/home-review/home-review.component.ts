@@ -19,6 +19,14 @@ export class HomeReviewComponent {
 const ReviewList = [
   {
     selected: true,
+    href: 'https://blog.naver.com/sam_box/222827110393',
+    img: 'assets/home-review/sam_box_preview.jpg',
+    date: '2022.07.24 방문',
+    tag: '#펜션 #평상 #백숙',
+    description: '물놀이 하기 최고!',
+  },
+  {
+    selected: false,
     href: 'https://blog.naver.com/vhfpqj327/222791258320',
     img: 'assets/home-review/vhfpqj327_preview.jpg',
     date: '2022.06.29 방문',
@@ -40,14 +48,6 @@ const ReviewList = [
     date: '2022.07.10 방문',
     tag: '#백숙 #물놀이',
     description: '엄청 친절하시고 음식 맛도 좋아요',
-  },
-  {
-    selected: false,
-    href: 'https://blog.naver.com/sam_box/222827110393',
-    img: 'assets/home-review/sam_box_preview.jpg',
-    date: '2022.07.24 방문',
-    tag: '#펜션 #평상 #백숙',
-    description: '물놀이 하기 최고!',
   },
   {
     selected: false,
