@@ -42,6 +42,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { StoryComponent } from './story/story.component';
 import { RoomComponent } from './pension-service/room/room.component';
+import { HomeReviewsComponent } from './home/home-reviews/home-reviews.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { RoomComponent } from './pension-service/room/room.component';
     HomeComponent,
     HomeVideoComponent,
     HomeReviewComponent,
+    HomeReviewsComponent,
     HomeRecommendComponent,
     HomeYoutubeComponent,
     AboutComponent,

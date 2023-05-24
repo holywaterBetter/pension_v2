@@ -1,0 +1,20 @@
+:host {
+  --margin: 30%;
+}
+.image-container {
+  display: flex;
+  overflow-x: auto; /* 가로 스크롤 가능하도록 설정 */
+  gap: 20px; /* 이미지 간격 설정 */
+  margin: 0 var(--margin);
+}
+
+.image {
+  width: 100%; /* 이미지 너비 설정 */
+}
+
+.image-container {
+  -ms-overflow-style: none;
+}
+.image-container::-webkit-scrollbar {
+  display: none;
+}

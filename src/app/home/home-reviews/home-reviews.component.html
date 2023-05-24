@@ -1,0 +1,8 @@
+<div class="image-container" #ImageContainer>
+  <img
+    *ngFor="let review of ReviewList"
+    class="image"
+    src="{{ review.img }}"
+    alt="{{ review.tag }}"
+  />
+</div>
